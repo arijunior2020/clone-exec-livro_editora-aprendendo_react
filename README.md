@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+# 📚 Projeto Editora MaujorTec
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📖 Sobre Este Projeto
 
-## Available Scripts
+Este projeto é um clone do proposto no livro **"React - Aprendendo e Praticando"** de **Maurício Maujor Samy Silva**, publicado pela **Editora Novatec**. O objetivo é aprimorar os conhecimentos em **React**, manipulando estados, componentes e eventos.
 
-In the project directory, you can run:
+O projeto simula um site de uma editora fictícia chamada **Editora MaujorTec**, exibindo uma lista de livros categorizados.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React** (create-react-app)
+- **JavaScript (ES6+)**
+- **CSS**
+- **Fetch API** (para carregar os dados)
+- **JSX**
+- **Componentes Funcionais e de Classe**
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📦 Instalação
 
-### `npm run build`
+### 1️⃣ Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/seu-usuario/editora-maujortec.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2️⃣ Acesse a pasta do projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd editora-maujortec
+```
 
-### `npm run eject`
+### 3️⃣ Instale as dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4️⃣ Inicie o servidor de desenvolvimento:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O projeto será executado em [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ✨ Funcionalidades
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✅ Exibir uma lista de livros carregada via API  
+✅ Navegação entre categorias de livros  
+✅ Exibição de detalhes de cada livro
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🛠️ Estrutura do Projeto
 
-### Analyzing the Bundle Size
+```plaintext
+📂 editora-maujortec
+├── 📂 public
+│   ├── 📂 api
+│   │   └── todosOsLivros.json
+│   ├── 📂 imagens
+│   │   └── capas
+│   ├── index.html
+│   └── robots.txt
+├── 📂 src
+│   ├── 📂 components
+│   │   ├── Home.js
+│   │   ├── Frontend.js
+│   │   ├── Programacao.js
+│   │   ├── Design.js
+│   │   ├── Catalogo.js
+│   │   ├── Livro.js
+│   │   ├── Topo.js
+│   │   ├── Rodape.js
+│   │   └── NotFound.js
+│   ├── App.js
+│   ├── index.js
+│   ├── index.css
+│   └── reportWebVitals.js
+├── 📜 package.json
+├── 📜 README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **App.js** → Componente principal que gerencia o estado da aplicação.
+- **Home.js** → Componente que exibe os últimos lançamentos.
+- **Frontend.js** → Componente que exibe livros da categoria Frontend.
+- **Programacao.js** → Componente que exibe livros da categoria Programação.
+- **Design.js** → Componente que exibe livros da categoria Design.
+- **Catalogo.js** → Componente que exibe o catálogo completo de livros.
+- **Livro.js** → Componente que exibe os detalhes de um livro específico.
+- **Topo.js** → Componente que exibe o cabeçalho do site.
+- **Rodape.js** → Componente que exibe o rodapé do site.
+- **NotFound.js** → Componente que exibe uma página de erro 404.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 📌 Melhorias Futuras
 
-### Advanced Configuration
+🚀 Melhorar o design com Bootstrap ou TailwindCSS  
+📊 Adicionar busca e filtros nos livros  
+🔄 Implementar persistência de dados com LocalStorage ou Banco de Dados
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### 📜 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Este projeto é apenas para fins de estudo e prática elaborados pelo livro **React - Aprendendo e Praticando**. 📚
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 👨‍💻 Autor
+
+Feito com 💙 por Arimatéia Júnior 🚀
+
+---
+
+### 📚 Créditos
+
+Este projeto foi baseado no livro **"React - Aprendendo e Praticando"** de **Maurício Maujor Samy Silva**, publicado pela **Editora Novatec**.
